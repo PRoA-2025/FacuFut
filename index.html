@@ -52,6 +52,13 @@
       font-weight:700;
     }
 
+   .carousel-item img {
+    width: 100%;       
+    height: 400px;    
+    object-fit: cover; 
+  }
+    
+
     
     .card-field img { height: 180px; object-fit: cover; border-top-left-radius:.5rem; border-top-right-radius:.5rem; }
 
@@ -74,7 +81,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">FacuFut</a>
+      <a class="navbar-brand" href="#"><img src="c:\Users\thoma\OneDrive\Imágenes\logo facu.jpeg" width="50" alt="Logo Facu Fut7">FacuFut</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -82,7 +89,6 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#canchas">Canchas</a></li>
           <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
           <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -112,59 +118,37 @@
 
         <div class="col-lg-5 d-none d-lg-block">
           <div class="card shadow-sm">
-            <img src="img/canchas-preview.jpg" alt="Canchas Facu Fut" class="img-fluid rounded-end">
+            <img src="c:\Users\thoma\OneDrive\Imágenes\logo facu.jpeg" width="70%"  alt="Canchas Facu Fut" class="img-fluid rounded-end">
           </div>
         </div>
       </div>
     </div>
   </header>
 
- 
-  <section id="canchas">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="mb-0">Nuestras canchas</h2>
-        <small class="text-muted">Elige la que más te guste y reserva online</small>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card card-field h-100">
-            <img src="img/cancha-5.jpg" class="card-img-top" alt="Cancha 5">
-            <div class="card-body">
-              <h5 class="card-title">Cancha 1 - Sintética</h5>
-              <p class="card-text">Ideal para partidos rápidos. Iluminación nocturna y arcos reglamentarios.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li>Capacidad: 10 jugadores</li>
-                <li>Duración mínima: 1 hora</li>
-                <li>Precio: $2000 / hora</li>
-              </ul>
-              <a href="#reservas" class="btn btn-primary-custom">Reservar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card card-field h-100">
-            <img src="img/cancha-7.jpg" class="card-img-top" alt="Cancha 7">
-            <div class="card-body">
-              <h5 class="card-title">Cancha 2 - Césped natural</h5>
-              <p class="card-text">Perfecta para entrenamientos y torneos amateurs.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li>Capacidad: 14 jugadores</li>
-                <li>Vestuario y duchas</li>
-                <li>Precio: $3500 / hora</li>
-              </ul>
-              <a href="#reservas" class="btn btn-primary-custom">Reservar</a>
-            </div>
-          </div>
-        </div>
-
   
-        </div>
-      </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <img src="c:\Users\thoma\OneDrive\Imágenes\cancha 1.jpg" class="d-block w-100" alt="...">
     </div>
-  </section>
+    <div class="carousel-item">
+      <img src="c:\Users\thoma\OneDrive\Imágenes\cancha 2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="c:\Users\thoma\OneDrive\Imágenes\canchas.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+          
+      
 
   
   <section id="reservas" class="bg-light">
@@ -195,9 +179,9 @@
             <div class="mb-3">
               <label class="form-label">Cancha</label>
               <select class="form-select" id="cancha">
-                <option>Cancha 5 - Sintética</option>
-                <option>Cancha 7 - Césped natural</option>
-                <option>Cancha 11 - Profesional</option>
+                <option>Cancha 1 - Sintética</option>
+                <option>Cancha 2 - Césped natural</option>
+                
               </select>
             </div>
 
